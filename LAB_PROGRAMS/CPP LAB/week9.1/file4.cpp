@@ -1,0 +1,1 @@
+/* Write a program to sort the data in a file alphabetically and write a sorted data in a file*/
