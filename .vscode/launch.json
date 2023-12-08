@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": ".",
-      "program": "build/Debug/outDebug"
+      "cwd": "/Users/yalagaddaeswaraditya/Desktop/CPP_GITHUB/CPP",
+      "program": "/Users/yalagaddaeswaraditya/Desktop/CPP_GITHUB/CPP/build/Debug/outDebug"
     }
   ]
 }
