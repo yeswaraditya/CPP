@@ -19,7 +19,7 @@ int main()
 {
     A *p;
     B b;
-    p=&b;
+    p = &b;
     p->f();
     p->g();
 }
