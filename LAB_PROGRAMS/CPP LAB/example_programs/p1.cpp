@@ -1,13 +1,13 @@
 // maps withs list
 
-#include<iostream>
-#include<map>
-#include<list>
-#include<string>
+#include <iostream>
+#include <map>
+#include <list>
+#include <string>
 using namespace std;
 class Student
 {
-    public:
+public:
     string name;
     int roll;
     double sgpa;
@@ -16,34 +16,27 @@ class Student
 
 int main()
 {
-    map<int,list<Student>> map;
-    string name;int roll;
-    
-    double sgpa,cgpa;
+    map<int, list<Student>> map;
+    string name;
+    int roll;
 
-    cout<<"enter student details"<<endl;
+    double sgpa, cgpa;
 
-    for(int i=0;i<2;i++)
+    cout << "enter student details" << endl;
+
+    for (int i = 0; i < 2; i++)
     {
-        cin>>name>>roll>>sgpa>>cgpa;
-        map[roll].push_back({name,sgpa,cgpa});
-
+        cin >> name >> roll >> sgpa >> cgpa;
+        map[roll].push_back({name, sgpa, cgpa});
     }
 
-    for(const auto& pair:map)
+    for (const auto &pair : map)
     {
-        
-        cout<<pair.first<<endl;
-        for(const auto& student:pair.second)
+
+        cout << pair.first << endl;
+        for (const auto &student : pair.second)
         {
-            cout<<student.name<<" "<<student.sgpa<<" "<<student.cgpa<<" "<<endl;
+            cout << student.name << " " << student.sgpa << " " << student.cgpa << " " << endl;
         }
-
     }
-
-
-
-
-    
-
 }
