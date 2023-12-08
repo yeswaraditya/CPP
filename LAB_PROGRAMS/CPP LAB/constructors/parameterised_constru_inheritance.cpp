@@ -19,4 +19,22 @@ class Parent
      }
 
 };
-class Child
+class Child: public Parent
+{
+    public:
+
+    Child(int c):Parent(c)
+    {
+        cout<<"this is child class\n";
+    }
+
+};
+
+int main()
+{
+    Child c(10);
+    
+
+    c.print();
+
+}
