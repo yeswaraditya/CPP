@@ -1,22 +1,51 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
-class Parent
+class Person
 {
     private:
-    int x;
+    string name;
+    int age;
+
     public:
-     Parent(int x)
+     Person(string name,int age)
      {
-        this->x=x;
-        cout<<"this is parent class\n";
+        this->name=name;
+        this->age=age;
      }
 
-     void print()
-     {
-        cout<<"variable in parent\n"<<x;
-
-     }
-
+     void display()
+    {
+        cout<<"Name: "<<name<<endl;
+        cout<<"Age: "<<age<<endl;
+    }
 };
-class Child
+class Student :public Person
+{
+    private:
+    string coursename;
+
+    public:
+
+    Student(string name,int age,string coursename):Person(name,age)
+    {
+        this->coursename=coursename;
+
+    }
+    void displayStudentDetails()
+    {
+        display();
+        cout<<"coursename: "<<coursename<<endl;
+
+    }
+};
+
+int main()
+{
+    Person person("eswar",19);
+    person.display();
+
+    Student s("aditya",21,"cse course");
+    s.displayStudentDetails();
+}
