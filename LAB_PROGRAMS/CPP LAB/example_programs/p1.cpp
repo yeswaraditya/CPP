@@ -16,7 +16,7 @@ public:
 
 int main()
 {
-    map<int, list<Student>> map;
+    map<int,list<Student>> map;
     string name;
     int roll;
 

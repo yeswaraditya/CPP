@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/yalagaddaeswaraditya/Desktop/CPP_GITHUB/CPP/LAB_PROGRAMS/2nd_midexam_questions",
-      "program": "/Users/yalagaddaeswaraditya/Desktop/CPP_GITHUB/CPP/LAB_PROGRAMS/2nd_midexam_questions/build/Debug/outDebug"
+      "cwd": "/Users/yalagaddaeswaraditya/Desktop/CPP_GITHUB/CPP/LAB_PROGRAMS/Task6",
+      "program": "/Users/yalagaddaeswaraditya/Desktop/CPP_GITHUB/CPP/LAB_PROGRAMS/Task6/build/Debug/outDebug"
     }
   ]
 }
